@@ -52,6 +52,14 @@ main {
     text-align: left;
 }
 
+.card{
+    width: 20rem;
+}
+
+.card-img-top{
+    width: 17.8rem;
+    height: 11rem;
+}
 /* Seletores dos componentes do Rodapé */
 
 footer {
@@ -63,10 +71,6 @@ footer {
 
 .first{
     width: 50vw;
-}
-
-.second{
-    width: 30vw;
 }
 
 .fa-user{
@@ -83,7 +87,11 @@ footer {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    section{
+        text-align: center;
+    }
+
     .first{
         width: 80vw;
         padding-bottom: 30px;
@@ -91,6 +99,7 @@ footer {
 
     .second{
         width: 80vw;
+        text-align: center;
     }
 
     .subdiv{
