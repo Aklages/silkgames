@@ -1,0 +1,110 @@
+/* Seletores gerais */
+
+:root {
+    --main-color: #612150;
+    --second-color: #582b39;
+    --third-color: #6e0000;
+    --white-color: #fefefe;
+    --bg-color: #b44169;
+    --ft-color: #574141;
+}
+
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--white-color);
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+p{
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Seletores dos componentes do cabeçalho */
+
+header {
+    width: 100vw;
+    height: 8vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-size: 1.4rem;
+}
+
+nav {
+    width: 40vw;
+}
+
+/* Seletores dos componentes do Corpo do site */
+
+body {
+    background-color: var(--bg-color);
+}
+
+main {
+    width: 100vw;
+    text-align: left;
+}
+
+/* Seletores dos componentes do Rodapé */
+
+footer {
+    width: 100vw;
+    text-align: left;
+    padding: 1vh;
+    padding-bottom: 3vh;
+}
+
+.first{
+    width: 50vw;
+}
+
+.second{
+    width: 30vw;
+}
+
+.fa-user{
+    font-size: 80px;
+}
+
+.redes{
+    font-size: 30px;
+}
+
+@media (max-width: 1000px) {
+    nav {
+        width: 65vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .first{
+        width: 80vw;
+        padding-bottom: 30px;
+    }
+
+    .second{
+        width: 80vw;
+    }
+
+    .subdiv{
+        padding-bottom: 30px;
+    }
+
+}
+  
+  @media (max-width: 300px) {
+    .subdiv{
+        flex-direction: column;
+    }
+    .redes{
+        margin-top: 2vw;
+    }
+}
+  
