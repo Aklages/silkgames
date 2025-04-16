@@ -47,6 +47,15 @@ body {
     background-color: var(--bg-color);
 }
 
+html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+  
+html::-webkit-scrollbar{
+    display: none;
+}
+
 main {
     width: 100vw;
     text-align: left;
@@ -106,10 +115,10 @@ footer {
     nav {
         width: 65vw;
     }
-    #primeiro{
+    .primeiro{
         width: 85vw;
     }
-    #segundo{
+    .segundo{
         width: 85vw;
     }
 }
@@ -131,6 +140,7 @@ footer {
 
     .subdiv{
         padding-bottom: 30px;
+        flex-direction: column;
     }
 
     .corte{
@@ -139,18 +149,26 @@ footer {
 
 }
   
-  @media (max-width: 450px) {
-    .subdiv{
-        flex-direction: column;
+@media (max-width: 575px) {
+    .banner{
+        width: 20vw;
     }
-    .redes{
-        margin-top: 2vw;
+}
+
+@media (max-width: 450px) {
+    .subdiv{
+        display: flex;
+        flex-direction: column;
     }
     .card{
         width: 15rem;
     }
     .card-img-top{
         height: 10rem;
+    }
+    .redes{
+        margin-top: 3vh;
+        font-size: 60px;
     }
 }
 

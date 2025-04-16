@@ -372,7 +372,7 @@ if(games_carousel && games_section){
             if(i == 0){
                 games_carousel.append(`
                 <div id="${dados.games[i].id}" class="carousel-item active link">
-                <img src="${dados.games[i].imagem_principal}" class="d-block w-100 corte rounded" alt="...">
+                <img src="${dados.games[i].imagem_principal}" class="d-block w-100 corte rounded banner" alt="...">
                 <div class="carousel-caption d-block">
                   <h5>${dados.games[i].titulo}</h5>
                   <p>${dados.games[i].descricao}</p>
@@ -383,7 +383,7 @@ if(games_carousel && games_section){
             else{
                 games_carousel.append(`
                 <div id="${dados.games[i].id}" class="carousel-item link">
-                <img src="${dados.games[i].imagem_principal}" class="d-block w-100 corte rounded" alt="...">
+                <img src="${dados.games[i].imagem_principal}" class="d-block w-100 corte rounded banner" alt="...">
                 <div class="carousel-caption d-block">
                   <h5>${dados.games[i].titulo}</h5>
                   <p>${dados.games[i].descricao}</p>
@@ -424,34 +424,36 @@ const game_main = $("#game_main");
 let params = new URLSearchParams(document.location.search);
 let id = params.get("id");
 
-for(let i = 0; i <= dados.games.length; i++){
-    if(dados.games[i].id == id){
-        game_main.html(`
-            <div class="primeiro">
-                <h2>${dados.games[i].titulo}</h2>
-                <img class="img-fluid corte" src="${dados.games[i].imagem_principal}" alt="">
-            </div>
-            <div class="d-flex flex-column justify-content-between segundo">
-                <div class="my-1">
-                    <h5 class="d-inline">Sobre: </h5><p class="d-inline">${dados.games[i].conteudo}</p>
+if(game_main){
+    for(let i = 0; i <= dados.games.length; i++){
+        if(dados.games[i].id == id){
+            game_main.html(`
+                <div class="primeiro">
+                    <h2>${dados.games[i].titulo}</h2>
+                    <img class="img-fluid corte" src="${dados.games[i].imagem_principal}" alt="">
                 </div>
-                <div class="my-1">
-                    <h5 class="d-inline">Plataformas: </h5><p class="d-inline">${dados.games[i].plataformas}</p>
+                <div class="d-flex flex-column justify-content-between segundo">
+                    <div class="my-1">
+                        <h5 class="d-inline">Sobre: </h5><p class="d-inline">${dados.games[i].conteudo}</p>
+                    </div>
+                    <div class="my-1">
+                        <h5 class="d-inline">Plataformas: </h5><p class="d-inline">${dados.games[i].plataformas}</p>
+                    </div>
+                    <div class="my-1">
+                        <h5 class="d-inline">Generos: </h5><p class="d-inline">${dados.games[i].genero}</p>
+                    </div>
+                    <div class="my-1">
+                        <h5 class="d-inline">Lancamento: </h5><p class="d-inline">${dados.games[i].lancamento}</p>
+                    </div>
+                    <div class="my-1">
+                        <h5 class="d-inline">Desenvolvedora: </h5><p class="d-inline">${dados.games[i].desenvolvedora}</p>
+                    </div>
+                    <div class="my-1">
+                        <h5 class="d-inline">Editora: </h5><p class="d-inline">${dados.games[i].editora}</p>
+                    </div>
                 </div>
-                <div class="my-1">
-                    <h5 class="d-inline">Generos: </h5><p class="d-inline">${dados.games[i].genero}</p>
-                </div>
-                <div class="my-1">
-                    <h5 class="d-inline">Lancamento: </h5><p class="d-inline">${dados.games[i].lancamento}</p>
-                </div>
-                <div class="my-1">
-                    <h5 class="d-inline">Desenvolvedora: </h5><p class="d-inline">${dados.games[i].desenvolvedora}</p>
-                </div>
-                <div class="my-1">
-                    <h5 class="d-inline">Editora: </h5><p class="d-inline">${dados.games[i].editora}</p>
-                </div>
-            </div>
-        `);
-        break;
-    }
-};
+            `);
+            break;
+        }
+    };
+}
