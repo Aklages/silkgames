@@ -86,7 +86,7 @@ const dados = {
             "titulo": "Balatro",
             "descricao": "Rogue like deck builder de Poker!",
             "conteudo": "Balatro é um construtor de decks roguelike inspirado no pôquer, cujo objetivo é criar sinergias poderosas e ganhar muito. Combine mãos de pôquer válidas com cartas Joker exclusivas para criar sinergias e construções variadas. Ganhe fichas suficientes para vencer blinds traiçoeiros, enquanto descobre mãos e decks bônus ocultos à medida que avança. Você precisará de toda a vantagem possível para alcançar o blind do chefe, vencer o ante final e garantir a vitória. A experiência definitiva de pôquer roguelike. Infinitas possibilidades - cada pick-up, descarte e joker pode alterar drasticamente o curso da sua jogada.",
-            "plataformas" : "PC, Nintendo Switch, Mobile",
+            "plataformas" : "PC, Nintendo Switch",
             "genero": "Stratégia, Casual, Indie",
             "lancamento": "Fevereiro de 2024",
             "desenvolvedora": "LocalThunk",
@@ -105,7 +105,7 @@ const dados = {
             "destaque": false,
             "titulo": "Silent Hill 2",
             "descricao": "Jogo de suspense da Konami",
-            "conteudo": "Após receber uma carta de sua falecida esposa, James viaja para onde compartilharam tantas memórias, na esperança de vê-la novamente: Silent Hill. Lá, à beira do lago, ele encontra uma mulher estranhamente parecida com ela... 'Meu nome... é Maria', sorri a mulher. Seu rosto, sua voz... Ela é exatamente como ela. Experimente uma aula magistral de survival horror psicológico — aclamada como a melhor da série — no hardware mais moderno, com visuais arrepiantes e sons viscerais.",
+            "conteudo": "Após receber uma carta de sua falecida esposa, James viaja para onde compartilharam tantas memórias, na esperança de vê-la novamente: Silent Hill. Lá, à beira do lago, ele encontra uma mulher estranhamente parecida com ela... 'Meu nome... é Maria', sorri a mulher. Seu rosto, sua voz... Ela é exatamente como ela. Experimente uma aula magistral de survival horror psicológico aclamada como a melhor da série no hardware mais moderno, com visuais arrepiantes e sons viscerais.",
             "plataformas" : "PC, Nintendo Switch, XBOX Game Pass, Playstation 5",
             "genero": "Ação, Aventura",
             "lancamento": "Outubro de 2024",
@@ -428,28 +428,29 @@ if(game_main){
     for(let i = 0; i <= dados.games.length; i++){
         if(dados.games[i].id == id){
             game_main.html(`
-                <div class="primeiro">
+                <div class="primeiro d-flex flex-column align-items-lg-start align-items-center">
                     <h2>${dados.games[i].titulo}</h2>
                     <img class="img-fluid corte" src="${dados.games[i].imagem_principal}" alt="">
                 </div>
                 <div class="d-flex flex-column justify-content-between segundo">
                     <div class="my-1">
-                        <h5 class="d-inline">Sobre: </h5><p class="d-inline">${dados.games[i].conteudo}</p>
+                        <h3 class="mt-3">Sobre</h3>
+                        <p class="d-inline">${dados.games[i].conteudo}</p>
                     </div>
                     <div class="my-1">
-                        <h5 class="d-inline">Plataformas: </h5><p class="d-inline">${dados.games[i].plataformas}</p>
+                        <h3 class="mt-3">Plataformas</h3><p class="d-inline">${dados.games[i].plataformas}</p>
                     </div>
                     <div class="my-1">
-                        <h5 class="d-inline">Generos: </h5><p class="d-inline">${dados.games[i].genero}</p>
+                        <h3 class="mt-3">Generos</h3><p class="d-inline">${dados.games[i].genero}</p>
                     </div>
                     <div class="my-1">
-                        <h5 class="d-inline">Lancamento: </h5><p class="d-inline">${dados.games[i].lancamento}</p>
+                        <h3 class="mt-3">Lancamento</h3><p class="d-inline">${dados.games[i].lancamento}</p>
                     </div>
                     <div class="my-1">
-                        <h5 class="d-inline">Desenvolvedora: </h5><p class="d-inline">${dados.games[i].desenvolvedora}</p>
+                        <h3 class="mt-3">Desenvolvedora</h3><p class="d-inline">${dados.games[i].desenvolvedora}</p>
                     </div>
                     <div class="my-1">
-                        <h5 class="d-inline">Editora: </h5><p class="d-inline">${dados.games[i].editora}</p>
+                        <h3 class="mt-3">Editora</h3><p class="d-inline">${dados.games[i].editora}</p>
                     </div>
                 </div>
             `);

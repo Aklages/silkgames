@@ -68,9 +68,13 @@ main {
 }
 
 .card{
-    background-color: #b40c0c;
+    background-color: #cc4a4a;
     width: 20rem;
     height: 25rem;
+}
+
+.card-body h3{
+    color: #fcfcfc;
 }
 
 .card-img-top{
@@ -111,7 +115,7 @@ footer {
     font-size: 30px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 991px) {
     nav {
         width: 65vw;
     }
@@ -169,6 +173,9 @@ footer {
     .redes{
         margin-top: 3vh;
         font-size: 60px;
+    }
+    .corte{
+        height: 20vh;
     }
 }
 
