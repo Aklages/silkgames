@@ -59,7 +59,9 @@ main {
 }
 
 .card{
+    background-color: #b40c0c;
     width: 20rem;
+    height: 25rem;
 }
 
 .card-img-top{
@@ -67,12 +69,16 @@ main {
     height: 11rem;
 }
 
-#primeiro{
+.primeiro{
     width: 50vw;
 }
 
-#segundo{
+.segundo{
     width: 30vw;
+}
+
+.link{
+    cursor: pointer;
 }
 
 /* Seletores dos componentes do Rodapé */
@@ -106,9 +112,6 @@ footer {
     #segundo{
         width: 85vw;
     }
-    .card{
-        width: 15rem;
-    }
 }
 
 @media (max-width: 767px) {
@@ -130,21 +133,32 @@ footer {
         padding-bottom: 30px;
     }
 
-    .card{
-        width: 12rem;
-    }
-
     .corte{
         height: 30vh;
     }
 
 }
   
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     .subdiv{
         flex-direction: column;
     }
     .redes{
         margin-top: 2vw;
+    }
+    .card{
+        width: 15rem;
+    }
+    .card-img-top{
+        height: 10rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .card{
+        width: 12rem;
+    }
+    .card-img-top{
+        height: 8rem;
     }
 }
