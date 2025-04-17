@@ -104,7 +104,7 @@ const dados = {
             "id": 6,
             "destaque": false,
             "titulo": "Silent Hill 2",
-            "descricao": "Jogo de suspense da Konami",
+            "descricao": "Um remake de uma das franquias mais famosas de suspense",
             "conteudo": "Após receber uma carta de sua falecida esposa, James viaja para onde compartilharam tantas memórias, na esperança de vê-la novamente: Silent Hill. Lá, à beira do lago, ele encontra uma mulher estranhamente parecida com ela... 'Meu nome... é Maria', sorri a mulher. Seu rosto, sua voz... Ela é exatamente como ela. Experimente uma aula magistral de survival horror psicológico aclamada como a melhor da série no hardware mais moderno, com visuais arrepiantes e sons viscerais.",
             "plataformas" : "PC, Nintendo Switch, XBOX Game Pass, Playstation 5",
             "genero": "Ação, Aventura",
@@ -164,7 +164,7 @@ const dados = {
             "id": 9,
             "destaque": false,
             "titulo": "Metaphor: ReFantazio",
-            "descricao": "Explore um mundo fantástico",
+            "descricao": "Explore um mundo fantástico nesse RPG com linda direção de arte",
             "conteudo": "Escreva seu destino e supere o medo ao adentrar um mundo de fantasia diferente de tudo que você já viu. Repleto de mistérios inquietantes, o reino está à beira de um precipício. Agora, você deve embarcar em uma jornada, superando obstáculos e construindo laços com amigos. Das mentes criativas da série Persona, Metaphor: ReFantazio marca o primeiro RPG de fantasia completo da ATLUS, trazido a você pelo diretor Katsura Hashino, pelo designer de personagens Shigenori Soejima e pelo compositor Shoji Meguro. Metaphor: Refantazio é desenvolvido pelo Studio Zero.",
             "plataformas" : "PC, PlayStation 4, PlayStation 5, Xbox Series S/X",
             "genero": "Ação, Aventura, RPG",
@@ -184,7 +184,7 @@ const dados = {
             "id": 10,
             "destaque": false,
             "titulo": "Frostpunk 2",
-            "descricao": "Um ótimo jogo de estratégia",
+            "descricao": "Um ótimo jogo de estratégia com muitos detalhes",
             "conteudo": "Descubra um jogo de sobrevivência urbana ambientado 30 anos após uma nevasca apocalíptica devastar a Terra, transformando nosso mundo em um deserto árido e gelado. Em Frostpunk 2, você deve enfrentar uma nova ameaça mortal que surge no horizonte: a natureza humana e sua sede insaciável por poder.",
             "plataformas" : "PC, PlayStation 5, Xbox Series S/X",
             "genero": "Estratégia, Simulador",
@@ -284,7 +284,7 @@ const dados = {
             "id": 15,
             "destaque": false,
             "titulo": "Red Dead Redemption 2",
-            "descricao": "Dos mesmos criadores de GTAV",
+            "descricao": "Dos mesmos criadores de GTAV, um jogo rico de detalhes e um mundo fascinante",
             "conteudo": "Estados Unidos, 1899. O fim da era do velho oeste começou com a polícia caçando as últimas gangues de fora da lei. Aqueles que não se rendem ou sucumbem são mortos. Após um assalto dar errado na cidade de Blackwater, no oeste do país, Arthur Morgan e a gangue Van der Linde são forçados a fugir. Com agentes federais e os melhores caçadores de recompensas do país em seu encalço, a gangue precisa roubar, furtar e lutar para atravessar o acidentado coração dos Estados Unidos para sobreviver. Enquanto divisões internas cada vez maiores ameaçam destruir a gangue, Arthur precisa fazer uma escolha entre seus próprios ideais e a lealdade à gangue que o criou.",
             "plataformas" : "PC, PlayStation 4, Xbox One",
             "genero": "Ação",
@@ -304,7 +304,7 @@ const dados = {
             "id": 16,
             "destaque": false,
             "titulo": "Grand Theft Auto V",
-            "descricao": "Um ótimo jogo",
+            "descricao": "Um dos maiores jogos de todos os tempos, muito a frente do seu tempo",
             "conteudo": "A Rockstar Games foi além, desde a edição anterior da série. Você tem a construção de mundo complexa e realista de Liberty City, de GTA 4, no cenário vibrante e diversificado de Los Santos, de um antigo favorito dos fãs, o GTA San Andreas. 561 veículos diferentes (incluindo todos os transportes que você pode operar) e a quantidade aumenta a cada atualização. Narrativa simultânea de três perspectivas únicas: Siga Michael, um ex-criminoso que vive sua vida de lazer longe do passado; Franklin, um garoto que busca um futuro melhor; e Trevor, exatamente o passado do qual Michael está tentando fugir. GTA Online oferecerá muitos desafios adicionais, mesmo para jogadores experientes, vindos do modo história. Agora você terá outros jogadores por perto que podem ajudá-lo com a mesma probabilidade de arruinar sua missão. Todas as mecânicas de GTA atualizadas podem ser experimentadas pelos jogadores por meio do personagem personalizável exclusivo, e o conteúdo da comunidade, aliado ao sistema de níveis, tende a manter todos ocupados e engajados.",
             "plataformas" : "PC, PlayStation 5, Xbox Series S/X, PlayStation 4, PlayStation 3, Xbox 360, Xbox One",
             "genero": "Ação",
@@ -344,8 +344,8 @@ const dados = {
             "id": 18,
             "destaque": false,
             "titulo": "Hollow Knight",
-            "descricao": "Meu jogo preferido",
-            "conteudo": "Song",
+            "descricao": "Um ótimo jogo indie de exploração no estilo metroidvania<br>(meu preferido)",
+            "conteudo": "Explore hallownest, um reino de insetos em decadência. Jogue como um pequeno inseto que usa um ferrão de espada, explore e descobra o que aconteceu com esse mundo de fantasia cheio de detalhes. O jogo é no estilo metroidvania, com um ótimo sistema de exploração e com uma trilha sonora incrível. O jogo possui diversos desafios e lutas interessantes, tambem conta com uma historia misteriosa e cativante.",
             "plataformas" : "PC, Xbox One, PlayStation 4, Nintendo Switch",
             "genero": "Ação, Plataforma, Indie",
             "lancamento": "Fevereiro de 2017",
@@ -441,10 +441,10 @@ if(game_main){
                         <h3 class="mt-3">Plataformas</h3><p class="d-inline">${dados.games[i].plataformas}</p>
                     </div>
                     <div class="my-1">
-                        <h3 class="mt-3">Generos</h3><p class="d-inline">${dados.games[i].genero}</p>
+                        <h3 class="mt-3">Gêneros</h3><p class="d-inline">${dados.games[i].genero}</p>
                     </div>
                     <div class="my-1">
-                        <h3 class="mt-3">Lancamento</h3><p class="d-inline">${dados.games[i].lancamento}</p>
+                        <h3 class="mt-3">Lançamento</h3><p class="d-inline">${dados.games[i].lancamento}</p>
                     </div>
                     <div class="my-1">
                         <h3 class="mt-3">Desenvolvedora</h3><p class="d-inline">${dados.games[i].desenvolvedora}</p>
