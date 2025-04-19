@@ -15,8 +15,33 @@ const dados = {
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "",
-                    "descricao": ""
+                    "src": "./assets/img/HKS/screenshot1.jpg",
+                    "descricao": "screenshot-1"
+                },
+                {
+                    "id": 2,
+                    "src": "./assets/img/HKS/screenshot2.jpg",
+                    "descricao": "screenshot-2"
+                },
+                {
+                    "id": 3,
+                    "src": "./assets/img/HKS/screenshot3.jpg",
+                    "descricao": "screenshot-3"
+                },
+                {
+                    "id": 4,
+                    "src": "./assets/img/HKS/screenshot4.jpg",
+                    "descricao": "screenshot-4"
+                },
+                {
+                    "id": 5,
+                    "src": "./assets/img/HKS/screenshot5.jpg",
+                    "descricao": "screenshot-5"
+                },
+                {
+                    "id": 6,
+                    "src": "./assets/img/HKS/screenshot6.jpg",
+                    "descricao": "screenshot-6"
                 }
             ]
         },
@@ -35,8 +60,33 @@ const dados = {
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "",
-                    "descricao": ""
+                    "src": "./assets/img/DS2/screenshot1.jpg",
+                    "descricao": "screenshot-1"
+                },
+                {
+                    "id": 2,
+                    "src": "./assets/img/DS2/screenshot2.jpg",
+                    "descricao": "screenshot-2"
+                },
+                {
+                    "id": 3,
+                    "src": "./assets/img/DS2/screenshot3.jpg",
+                    "descricao": "screenshot-3"
+                },
+                {
+                    "id": 4,
+                    "src": "./assets/img/DS2/screenshot4.jpg",
+                    "descricao": "screenshot-4"
+                },
+                {
+                    "id": 5,
+                    "src": "./assets/img/DS2/screenshot5.jpg",
+                    "descricao": "screenshot-5"
+                },
+                {
+                    "id": 6,
+                    "src": "./assets/img/DS2/screenshot6.jpg",
+                    "descricao": "screenshot-6"
                 }
             ]
         },
@@ -55,8 +105,33 @@ const dados = {
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "",
-                    "descricao": ""
+                    "src": "./assets/img/ACS/screenshot1.jpg",
+                    "descricao": "screenshot-1"
+                },
+                {
+                    "id": 2,
+                    "src": "./assets/img/ACS/screenshot2.jpg",
+                    "descricao": "screenshot-2"
+                },
+                {
+                    "id": 3,
+                    "src": "./assets/img/ACS/screenshot3.jpg",
+                    "descricao": "screenshot-3"
+                },
+                {
+                    "id": 4,
+                    "src": "./assets/img/ACS/screenshot4.jpg",
+                    "descricao": "screenshot-4"
+                },
+                {
+                    "id": 5,
+                    "src": "./assets/img/ACS/screenshot5.jpg",
+                    "descricao": "screenshot-5"
+                },
+                {
+                    "id": 6,
+                    "src": "./assets/img/ACS/screenshot6.jpg",
+                    "descricao": "screenshot-6"
                 }
             ]
         },
@@ -75,8 +150,33 @@ const dados = {
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "",
-                    "descricao": ""
+                    "src": "./assets/img/BMW/screenshot1.jpg",
+                    "descricao": "screenshot-1"
+                },
+                {
+                    "id": 2,
+                    "src": "./assets/img/BMW/screenshot2.jpg",
+                    "descricao": "screenshot-2"
+                },
+                {
+                    "id": 3,
+                    "src": "./assets/img/BMW/screenshot3.jpg",
+                    "descricao": "screenshot-3"
+                },
+                {
+                    "id": 4,
+                    "src": "./assets/img/BMW/screenshot4.jpg",
+                    "descricao": "screenshot-4"
+                },
+                {
+                    "id": 5,
+                    "src": "./assets/img/BMW/screenshot5.jpg",
+                    "descricao": "screenshot-5"
+                },
+                {
+                    "id": 6,
+                    "src": "./assets/img/BMW/screenshot6.jpg",
+                    "descricao": "screenshot-6"
                 }
             ]
         },
@@ -95,8 +195,33 @@ const dados = {
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "",
-                    "descricao": ""
+                    "src": "./assets/img/BAL/screenshot1.jpg",
+                    "descricao": "screenshot-1"
+                },
+                {
+                    "id": 2,
+                    "src": "./assets/img/BAL/screenshot2.jpg",
+                    "descricao": "screenshot-2"
+                },
+                {
+                    "id": 3,
+                    "src": "./assets/img/BAL/screenshot3.jpg",
+                    "descricao": "screenshot-3"
+                },
+                {
+                    "id": 4,
+                    "src": "./assets/img/BAL/screenshot4.jpg",
+                    "descricao": "screenshot-4"
+                },
+                {
+                    "id": 5,
+                    "src": "./assets/img/BAL/screenshot5.jpg",
+                    "descricao": "screenshot-5"
+                },
+                {
+                    "id": 6,
+                    "src": "./assets/img/BAL/screenshot6.jpg",
+                    "descricao": "screenshot-6"
                 }
             ]
         },
@@ -115,8 +240,33 @@ const dados = {
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "",
-                    "descricao": ""
+                    "src": "./assets/img/SH2/screenshot1.jpg",
+                    "descricao": "screenshot-1"
+                },
+                {
+                    "id": 2,
+                    "src": "./assets/img/SH2/screenshot2.jpg",
+                    "descricao": "screenshot-2"
+                },
+                {
+                    "id": 3,
+                    "src": "./assets/img/SH2/screenshot3.jpg",
+                    "descricao": "screenshot-3"
+                },
+                {
+                    "id": 4,
+                    "src": "./assets/img/SH2/screenshot4.jpg",
+                    "descricao": "screenshot-4"
+                },
+                {
+                    "id": 5,
+                    "src": "./assets/img/SH2/screenshot5.jpg",
+                    "descricao": "screenshot-5"
+                },
+                {
+                    "id": 6,
+                    "src": "./assets/img/SH2/screenshot6.jpg",
+                    "descricao": "screenshot-6"
                 }
             ]
         },
@@ -135,8 +285,33 @@ const dados = {
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "",
-                    "descricao": ""
+                    "src": "./assets/img/HD2/screenshot1.jpg",
+                    "descricao": "screenshot-1"
+                },
+                {
+                    "id": 2,
+                    "src": "./assets/img/HD2/screenshot2.jpg",
+                    "descricao": "screenshot-2"
+                },
+                {
+                    "id": 3,
+                    "src": "./assets/img/HD2/screenshot3.jpg",
+                    "descricao": "screenshot-3"
+                },
+                {
+                    "id": 4,
+                    "src": "./assets/img/HD2/screenshot4.jpg",
+                    "descricao": "screenshot-4"
+                },
+                {
+                    "id": 5,
+                    "src": "./assets/img/HD2/screenshot5.jpg",
+                    "descricao": "screenshot-5"
+                },
+                {
+                    "id": 6,
+                    "src": "./assets/img/HD2/screenshot6.jpg",
+                    "descricao": "screenshot-6"
                 }
             ]
         },
@@ -155,8 +330,33 @@ const dados = {
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "",
-                    "descricao": ""
+                    "src": "./assets/img/P3R/screenshot1.jpg",
+                    "descricao": "screenshot-1"
+                },
+                {
+                    "id": 2,
+                    "src": "./assets/img/P3R/screenshot2.jpg",
+                    "descricao": "screenshot-2"
+                },
+                {
+                    "id": 3,
+                    "src": "./assets/img/P3R/screenshot3.jpg",
+                    "descricao": "screenshot-3"
+                },
+                {
+                    "id": 4,
+                    "src": "./assets/img/P3R/screenshot4.jpg",
+                    "descricao": "screenshot-4"
+                },
+                {
+                    "id": 5,
+                    "src": "./assets/img/P3R/screenshot5.jpg",
+                    "descricao": "screenshot-5"
+                },
+                {
+                    "id": 6,
+                    "src": "./assets/img/P3R/screenshot6.jpg",
+                    "descricao": "screenshot-6"
                 }
             ]
         },
@@ -175,8 +375,33 @@ const dados = {
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "",
-                    "descricao": ""
+                    "src": "./assets/img/MRF/screenshot1.jpg",
+                    "descricao": "screenshot-1"
+                },
+                {
+                    "id": 2,
+                    "src": "./assets/img/MRF/screenshot2.jpg",
+                    "descricao": "screenshot-2"
+                },
+                {
+                    "id": 3,
+                    "src": "./assets/img/MRF/screenshot3.jpg",
+                    "descricao": "screenshot-3"
+                },
+                {
+                    "id": 4,
+                    "src": "./assets/img/MRF/screenshot4.jpg",
+                    "descricao": "screenshot-4"
+                },
+                {
+                    "id": 5,
+                    "src": "./assets/img/MRF/screenshot5.jpg",
+                    "descricao": "screenshot-5"
+                },
+                {
+                    "id": 6,
+                    "src": "./assets/img/MRF/screenshot6.jpg",
+                    "descricao": "screenshot-6"
                 }
             ]
         },
@@ -195,8 +420,33 @@ const dados = {
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "",
-                    "descricao": ""
+                    "src": "./assets/img/FP2/screenshot1.jpg",
+                    "descricao": "screenshot-1"
+                },
+                {
+                    "id": 2,
+                    "src": "./assets/img/FP2/screenshot2.jpg",
+                    "descricao": "screenshot-2"
+                },
+                {
+                    "id": 3,
+                    "src": "./assets/img/FP2/screenshot3.jpg",
+                    "descricao": "screenshot-3"
+                },
+                {
+                    "id": 4,
+                    "src": "./assets/img/FP2/screenshot4.jpg",
+                    "descricao": "screenshot-4"
+                },
+                {
+                    "id": 5,
+                    "src": "./assets/img/FP2/screenshot5.jpg",
+                    "descricao": "screenshot-5"
+                },
+                {
+                    "id": 6,
+                    "src": "./assets/img/FP2/screenshot6.jpg",
+                    "descricao": "screenshot-6"
                 }
             ]
         },
@@ -215,8 +465,33 @@ const dados = {
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "",
-                    "descricao": ""
+                    "src": "./assets/img/ERS/screenshot1.jpg",
+                    "descricao": "screenshot-1"
+                },
+                {
+                    "id": 2,
+                    "src": "./assets/img/ERS/screenshot2.jpg",
+                    "descricao": "screenshot-2"
+                },
+                {
+                    "id": 3,
+                    "src": "./assets/img/ERS/screenshot3.jpg",
+                    "descricao": "screenshot-3"
+                },
+                {
+                    "id": 4,
+                    "src": "./assets/img/ERS/screenshot4.jpg",
+                    "descricao": "screenshot-4"
+                },
+                {
+                    "id": 5,
+                    "src": "./assets/img/ERS/screenshot5.jpg",
+                    "descricao": "screenshot-5"
+                },
+                {
+                    "id": 6,
+                    "src": "./assets/img/ERS/screenshot6.jpg",
+                    "descricao": "screenshot-6"
                 }
             ]
         },
@@ -235,8 +510,33 @@ const dados = {
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "",
-                    "descricao": ""
+                    "src": "./assets/img/NEV/screenshot1.jpg",
+                    "descricao": "screenshot-1"
+                },
+                {
+                    "id": 2,
+                    "src": "./assets/img/NEV/screenshot2.jpg",
+                    "descricao": "screenshot-2"
+                },
+                {
+                    "id": 3,
+                    "src": "./assets/img/NEV/screenshot3.jpg",
+                    "descricao": "screenshot-3"
+                },
+                {
+                    "id": 4,
+                    "src": "./assets/img/NEV/screenshot4.jpg",
+                    "descricao": "screenshot-4"
+                },
+                {
+                    "id": 5,
+                    "src": "./assets/img/NEV/screenshot5.jpg",
+                    "descricao": "screenshot-5"
+                },
+                {
+                    "id": 6,
+                    "src": "./assets/img/NEV/screenshot6.jpg",
+                    "descricao": "screenshot-6"
                 }
             ]
         },
@@ -255,8 +555,33 @@ const dados = {
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "",
-                    "descricao": ""
+                    "src": "./assets/img/ZEW/screenshot1.jpg",
+                    "descricao": "screenshot-1"
+                },
+                {
+                    "id": 2,
+                    "src": "./assets/img/ZEW/screenshot2.jpg",
+                    "descricao": "screenshot-2"
+                },
+                {
+                    "id": 3,
+                    "src": "./assets/img/ZEW/screenshot3.jpg",
+                    "descricao": "screenshot-3"
+                },
+                {
+                    "id": 4,
+                    "src": "./assets/img/ZEW/screenshot4.jpg",
+                    "descricao": "screenshot-4"
+                },
+                {
+                    "id": 5,
+                    "src": "./assets/img/ZEW/screenshot5.jpg",
+                    "descricao": "screenshot-5"
+                },
+                {
+                    "id": 6,
+                    "src": "./assets/img/ZEW/screenshot6.jpg",
+                    "descricao": "screenshot-6"
                 }
             ]
         },   
@@ -275,8 +600,33 @@ const dados = {
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "",
-                    "descricao": ""
+                    "src": "./assets/img/ZOT/screenshot1.jpg",
+                    "descricao": "screenshot-1"
+                },
+                {
+                    "id": 2,
+                    "src": "./assets/img/ZOT/screenshot2.jpg",
+                    "descricao": "screenshot-2"
+                },
+                {
+                    "id": 3,
+                    "src": "./assets/img/ZOT/screenshot3.jpg",
+                    "descricao": "screenshot-3"
+                },
+                {
+                    "id": 4,
+                    "src": "./assets/img/ZOT/screenshot4.jpg",
+                    "descricao": "screenshot-4"
+                },
+                {
+                    "id": 5,
+                    "src": "./assets/img/ZOT/screenshot5.jpg",
+                    "descricao": "screenshot-5"
+                },
+                {
+                    "id": 6,
+                    "src": "./assets/img/ZOT/screenshot6.jpg",
+                    "descricao": "screenshot-6"
                 }
             ]
         },
@@ -295,8 +645,33 @@ const dados = {
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "",
-                    "descricao": ""
+                    "src": "./assets/img/RD2/screenshot1.jpg",
+                    "descricao": "screenshot-1"
+                },
+                {
+                    "id": 2,
+                    "src": "./assets/img/RD2/screenshot2.jpg",
+                    "descricao": "screenshot-2"
+                },
+                {
+                    "id": 3,
+                    "src": "./assets/img/RD2/screenshot3.jpg",
+                    "descricao": "screenshot-3"
+                },
+                {
+                    "id": 4,
+                    "src": "./assets/img/RD2/screenshot4.jpg",
+                    "descricao": "screenshot-4"
+                },
+                {
+                    "id": 5,
+                    "src": "./assets/img/RD2/screenshot5.jpg",
+                    "descricao": "screenshot-5"
+                },
+                {
+                    "id": 6,
+                    "src": "./assets/img/RD2/screenshot6.jpg",
+                    "descricao": "screenshot-6"
                 }
             ]
         },
@@ -315,8 +690,33 @@ const dados = {
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "",
-                    "descricao": ""
+                    "src": "./assets/img/GTA/screenshot1.jpg",
+                    "descricao": "screenshot-1"
+                },
+                {
+                    "id": 2,
+                    "src": "./assets/img/GTA/screenshot2.jpg",
+                    "descricao": "screenshot-2"
+                },
+                {
+                    "id": 3,
+                    "src": "./assets/img/GTA/screenshot3.jpg",
+                    "descricao": "screenshot-3"
+                },
+                {
+                    "id": 4,
+                    "src": "./assets/img/GTA/screenshot4.jpg",
+                    "descricao": "screenshot-4"
+                },
+                {
+                    "id": 5,
+                    "src": "./assets/img/GTA/screenshot5.jpg",
+                    "descricao": "screenshot-5"
+                },
+                {
+                    "id": 6,
+                    "src": "./assets/img/GTA/screenshot6.jpg",
+                    "descricao": "screenshot-6"
                 }
             ]
         },
@@ -335,8 +735,33 @@ const dados = {
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "",
-                    "descricao": ""
+                    "src": "./assets/img/SMO/screenshot1.jpg",
+                    "descricao": "screenshot-1"
+                },
+                {
+                    "id": 2,
+                    "src": "./assets/img/SMO/screenshot2.jpg",
+                    "descricao": "screenshot-2"
+                },
+                {
+                    "id": 3,
+                    "src": "./assets/img/SMO/screenshot3.jpg",
+                    "descricao": "screenshot-3"
+                },
+                {
+                    "id": 4,
+                    "src": "./assets/img/SMO/screenshot4.jpg",
+                    "descricao": "screenshot-4"
+                },
+                {
+                    "id": 5,
+                    "src": "./assets/img/SMO/screenshot5.jpg",
+                    "descricao": "screenshot-5"
+                },
+                {
+                    "id": 6,
+                    "src": "./assets/img/SMO/screenshot6.jpg",
+                    "descricao": "screenshot-6"
                 }
             ]
         },
@@ -355,8 +780,33 @@ const dados = {
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "",
-                    "descricao": ""
+                    "src": "./assets/img/HLK/screenshot1.jpg",
+                    "descricao": "screenshot-1"
+                },
+                {
+                    "id": 2,
+                    "src": "./assets/img/HLK/screenshot2.jpg",
+                    "descricao": "screenshot-2"
+                },
+                {
+                    "id": 3,
+                    "src": "./assets/img/HLK/screenshot3.jpg",
+                    "descricao": "screenshot-3"
+                },
+                {
+                    "id": 4,
+                    "src": "./assets/img/HLK/screenshot4.jpg",
+                    "descricao": "screenshot-4"
+                },
+                {
+                    "id": 5,
+                    "src": "./assets/img/HLK/screenshot5.jpg",
+                    "descricao": "screenshot-5"
+                },
+                {
+                    "id": 6,
+                    "src": "./assets/img/HLK/screenshot6.jpg",
+                    "descricao": "screenshot-6"
                 }
             ]
         },
@@ -420,11 +870,12 @@ if(games_card){
 }
 
 const game_main = $("#game_main");
+const game_itens = $("#game_itens");
 
 let params = new URLSearchParams(document.location.search);
 let id = params.get("id");
 
-if(game_main){
+if(game_main && game_itens){
     for(let i = 0; i <= dados.games.length; i++){
         if(dados.games[i].id == id){
             game_main.html(`
@@ -454,6 +905,13 @@ if(game_main){
                     </div>
                 </div>
             `);
+            for(let n = 0; n < dados.games[i].imagens_complementares.length; n++){
+                game_itens.append(`
+                <div class="col">
+                    <h3>${dados.games[i].imagens_complementares[n].descricao}</h3><img class="imgs" src="${dados.games[i].imagens_complementares[n].src}" alt="">
+                </div>
+                `)
+            }
             break;
         }
     };

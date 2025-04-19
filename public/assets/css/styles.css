@@ -94,6 +94,10 @@ main {
     cursor: pointer;
 }
 
+.imgs{
+    width: 300px;
+}
+
 /* Seletores dos componentes do Rodapé */
 
 footer {
