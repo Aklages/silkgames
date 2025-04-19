@@ -352,11 +352,6 @@ const dados = {
                     "id": 5,
                     "src": "./assets/img/P3R/screenshot5.jpg",
                     "descricao": "screenshot-5"
-                },
-                {
-                    "id": 6,
-                    "src": "./assets/img/P3R/screenshot6.jpg",
-                    "descricao": "screenshot-6"
                 }
             ]
         },
@@ -532,11 +527,6 @@ const dados = {
                     "id": 5,
                     "src": "./assets/img/NEV/screenshot5.jpg",
                     "descricao": "screenshot-5"
-                },
-                {
-                    "id": 6,
-                    "src": "./assets/img/NEV/screenshot6.jpg",
-                    "descricao": "screenshot-6"
                 }
             ]
         },

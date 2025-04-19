@@ -95,7 +95,7 @@ main {
 }
 
 .imgs{
-    width: 300px;
+    width: 500px;
 }
 
 /* Seletores dos componentes do Rodapé */
@@ -160,6 +160,9 @@ footer {
 @media (max-width: 575px) {
     .banner{
         width: 20vw;
+    }
+    .imgs{
+        width: 250px;
     }
 }
 
