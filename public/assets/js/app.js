@@ -352,6 +352,11 @@ const dados = {
                     "id": 5,
                     "src": "./assets/img/P3R/screenshot5.jpg",
                     "descricao": "screenshot-5"
+                },
+                {
+                    "id": 6,
+                    "src": "./assets/img/P3R/screenshot6.jpg",
+                    "descricao": "screenshot-6"
                 }
             ]
         },
@@ -527,50 +532,55 @@ const dados = {
                     "id": 5,
                     "src": "./assets/img/NEV/screenshot5.jpg",
                     "descricao": "screenshot-5"
+                },
+                {
+                    "id": 6,
+                    "src": "./assets/img/NEV/screenshot6.jpg",
+                    "descricao": "screenshot-6"
                 }
             ]
         },
         {
             "id": 13,
             "destaque": false,
-            "titulo": "The Legend of Zelda: Echoes of Wisdom",
-            "descricao": "Jogue com a Zelda",
-            "conteudo": "The Legend of Zelda: Echoes of Wisdom é um jogo de aventura. Foi lançado em 26/09/2024. A maioria dos usuários do Raw avaliou o jogo como 'Recomendado'. The Legend of Zelda: Echoes of Wisdom está disponível para Nintendo Switch. Eiji Aonuma produziu o jogo.",
-            "plataformas" : "Nintendo Switch",
-            "genero": "Aventura",
-            "lancamento": "Setembro de 2024",
-            "desenvolvedora": "Nintendo",
-            "editora": "Nintendo",
-            "imagem_principal": "./assets/img/ZEW/Banner.png",
+            "titulo": "Neon White",
+            "descricao": "Um jogo de plataforma bem frenético e divertido",
+            "conteudo": "Um jogo de plataforma de ação em primeira pessoa extremamente veloz, ambientado além dos portões perolados do Céu. Neon White é um jogo de ação em primeira pessoa extremamente veloz sobre exterminar demônios no Céu. Você é White, um assassino escolhido a dedo do Inferno para competir com outros caçadores de demônios por uma chance de viver permanentemente no Céu. Os outros assassinos parecem familiares, no entanto... você os conheceu em alguma vida passada?",
+            "plataformas" : "Nintendo Switch, PC, PlayStation 5, PlayStation 4",
+            "genero": "Ação, Tiro, Aventura, Indie",
+            "lancamento": "Junho de 2022",
+            "desenvolvedora": "Ben Esposito, Angel Matrix",
+            "editora": "Annapurna Interactive",
+            "imagem_principal": "./assets/img/NEW/Banner.png",
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "./assets/img/ZEW/screenshot1.jpg",
+                    "src": "./assets/img/NEW/screenshot1.jpg",
                     "descricao": "screenshot-1"
                 },
                 {
                     "id": 2,
-                    "src": "./assets/img/ZEW/screenshot2.jpg",
+                    "src": "./assets/img/NEW/screenshot2.jpg",
                     "descricao": "screenshot-2"
                 },
                 {
                     "id": 3,
-                    "src": "./assets/img/ZEW/screenshot3.jpg",
+                    "src": "./assets/img/NEW/screenshot3.jpg",
                     "descricao": "screenshot-3"
                 },
                 {
                     "id": 4,
-                    "src": "./assets/img/ZEW/screenshot4.jpg",
+                    "src": "./assets/img/NEW/screenshot4.jpg",
                     "descricao": "screenshot-4"
                 },
                 {
                     "id": 5,
-                    "src": "./assets/img/ZEW/screenshot5.jpg",
+                    "src": "./assets/img/NEW/screenshot5.jpg",
                     "descricao": "screenshot-5"
                 },
                 {
                     "id": 6,
-                    "src": "./assets/img/ZEW/screenshot6.jpg",
+                    "src": "./assets/img/NEW/screenshot6.jpg",
                     "descricao": "screenshot-6"
                 }
             ]
