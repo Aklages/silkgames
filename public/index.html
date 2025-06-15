@@ -17,19 +17,13 @@
 <body class="example">
     <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
     <div class="bg-dark p-4 d-flex justify-content-around">
-        <a href="#">Perfil</a>
-        <a href="#">Favoritos</a>
-        <a href="plataformas.html">Plataformas</a>
-        <a href="#">Ranking</a>
+        <a href="#">Login</a>
       </div>
     </div>
     <header class="d-flex justify-content-between align-items-center pt-4 px-sm-5 px-3">
         <h1><a href="index.html">Silk</a></h1>
         <nav class="d-flex justify-content-between align-items-center d-none d-sm-flex">
-            <a class="p-2" href="#">Perfil</a>
-            <a class="p-2" href="#">Favoritos</a>
-            <a class="p-2" href="plataformas.html">Plataformas</a>
-            <a class="p-2" href="#">Ranking</a>
+            <a class="p-2" href="#">Login</a>
         </nav>
         <button class="navbar-toggler m-3 d-sm-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="fa-solid fa-bars"></span>
@@ -58,6 +52,10 @@
           </div>
         <h1>Todos os itens</h1>
         <hr>
+        <div class="d-flex">
+            <input id="searchbar" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button id="searchbutton" class="btn btn-danger">Search</button>
+        </div>
         <div class="container-fluid py-3">
             <div id="games_section" class="row">
             </div>
