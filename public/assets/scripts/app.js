@@ -11,7 +11,7 @@ if(games_carousel){
         games.forEach(game => {
             if(game.id == 1){
                 games_carousel.append(`
-                <div id="${game.id}" class="carousel-item active link">
+                <div id="${game.id_externo}" class="carousel-item active link">
                 <img src="${game.imagem_principal}" class="d-block w-100 corte rounded banner" alt="...">
                 <div class="carousel-caption d-block">
                 <h5>${game.titulo}</h5>
@@ -22,7 +22,7 @@ if(games_carousel){
             }
             else{
                 games_carousel.append(`
-                <div id="${game.id}" class="carousel-item link">
+                <div id="${game.id_externo}" class="carousel-item link">
                 <img src="${game.imagem_principal}" class="d-block w-100 corte rounded banner" alt="...">
                 <div class="carousel-caption d-block">
                 <h5>${game.titulo}</h5>
@@ -31,9 +31,28 @@ if(games_carousel){
             </div>
             `);
             }
+            let index = game.id_externo;
+            $(`#${index}`).on("click", ()=>{
+                window.location.href = `detalhe.html?id=${index}`;
+            })
         });
     })
 }
+
+function checar(game_id) {
+    let user_id = JSON.parse(sessionStorage.getItem('usuarioCorrente')).id;
+    return fetch(`favoritos?usuarioId=${user_id}&gameId=${game_id}`)
+        .then(res => res.json()) 
+        .then(data => {
+            if (data.length > 0) {
+                return `fa-solid`;
+            } 
+            else{
+                return `fa-regular`;
+            }
+        });
+}
+
 
 function pages(page){
     games_section.html("Carregando...");
@@ -45,22 +64,56 @@ function pages(page){
             fetch(`https://api.rawg.io/api/games/${game.id}?key=${key}`)
             .then(res => res.json())
             .then(game_info => {
+                checar(game.id)
+                .then(element => {
                 descricao = game_info.description.substr(0, 60);
                 games_section.append(`
                 <div class="col d-flex flex-column align-items-center">
-                    <div id="${game.id}" class="card my-3 p-3 link">
-                    <img src="${game.background_image}" class="card-img-top img-fluid corte" alt="...">
-                    <div class="card-body">
-                        <h3>${game.name}</h3>
-                        <p class="card-text"><light>${descricao}.</light></p>                    
+                    <div class="card my-3 p-3">
+                        <i id="${game.id}" class="favoritar ${element} fa-heart mb-2"></i>
+                        <div id="${game.id}" class="link">
+                            <img src="${game.background_image}" class="card-img-top img-fluid corte" alt="...">
+                            <div class="card-body">
+                                <h3>${game.name}</h3>
+                                <p class="card-text"><light>${descricao}.</light></p>                    
+                            </div>
+                        </div>
                     </div>
                 </div>
-                </div>
                 `);
+                })
+                .then(()=>{
+                let index = game.id;
+                $(`#${index}.favoritar`).on("click", ()=>{
+                    let icon = $(`#${index}.favoritar`);
+                    let user_id = JSON.parse(sessionStorage.getItem('usuarioCorrente')).id;
+                    if (icon.hasClass("fa-regular")){
+                        icon.removeClass("fa-regular").addClass("fa-solid");
+                        fetch("favoritos", {
+                            method: "POST",
+                            headers: { "Content-Type": "application/json" },
+                            body: JSON.stringify({ 
+                                usuarioId: user_id,
+                                gameId: index 
+                            })
+                        })
+                    }
+                    else{
+                        icon.removeClass("fa-solid").addClass("fa-regular");
+                        fetch(`favoritos?gameId=${index}&usuarioId=${user_id}`)
+                        .then(res => res.json())
+                        .then(data => {
+                            console.log(data[0])
+                            fetch(`favoritos/${data[0].id}`, {
+                                method: "DELETE"
+                            })
+                        })
+                    }
+                })
+                $(`#${index}.link`).on("click", ()=>{
+                    window.location.href = `detalhe.html?id=${index}`;
+                })
             })
-            let index = game.id;
-            $(`#${index}`).on("click", ()=>{
-                window.location.href = `detalhe.html?id=${index}`;
             })
         })
     })
@@ -95,7 +148,7 @@ if(games_pages){
 
 $(`#searchbutton`).on("click", ()=>{
     value = $("#searchbar").val();
-    fetch(`https://api.rawg.io/api/games?key=${key}&search=${value}&page_size=15`)
+    fetch(`https://api.rawg.io/api/games?key=${key}&search=${value}&search_exact=true&page_size=15&ordering=-metacritic`)
     .then(res => res.json())
     .then(games => {
         console.log(games)
@@ -108,12 +161,12 @@ $(`#searchbutton`).on("click", ()=>{
                 games_section.append(`
                 <div class="col d-flex flex-column align-items-center">
                     <div id="${game.id}" class="card my-3 p-3 link">
-                    <img src="${game.background_image}" class="card-img-top img-fluid corte" alt="...">
-                    <div class="card-body">
-                        <h3>${game.name}</h3>
-                        <p class="card-text"><light>${descricao}.</light></p>                    
+                        <img src="${game.background_image}" class="card-img-top img-fluid corte" alt="...">
+                        <div class="card-body">
+                            <h3>${game.name}</h3>
+                            <p class="card-text"><light>${descricao}.</light></p>                    
+                        </div>
                     </div>
-                </div>
                 </div>
                 `);
             })
@@ -122,6 +175,7 @@ $(`#searchbutton`).on("click", ()=>{
                 window.location.href = `detalhe.html?id=${index}`;
             })
         })
+        click(1, 5)
     })
 })
 
@@ -169,11 +223,10 @@ if(game_main && game_itens){
                     </div>
                 </div>
             `);
-            fetch(`https://api.rawg.io/api/games?key=${key}&search_exact=${game.slug}`)
+            fetch(`https://api.rawg.io/api/games?key=${key}&search=${game.slug}&search_exact=true`)
             .then(res => res.json())
             .then(game_info => {
                 let screenshots = game_info.results[0].short_screenshots;
-                console.log(screenshots.length);
                 for(let i = 1; i < screenshots.length; i++){
                     game_itens.append(`
                     <div class="col">

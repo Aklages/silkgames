@@ -34,7 +34,9 @@ function initLoginApp () {
         if (usuarioCorrenteJSON) {
             usuarioCorrente = JSON.parse (usuarioCorrenteJSON);
         } else {
-            window.location.href = LOGIN_URL;
+            if(window.location.pathname != "/index.html"){
+                window.location.href = LOGIN_URL;
+            }
         }
 
         // REGISTRA LISTENER PARA O EVENTO DE CARREGAMENTO DA PÁGINA PARA ATUALIZAR INFORMAÇÕES DO USUÁRIO
@@ -82,6 +84,7 @@ function loginUser (login, senha) {
             usuarioCorrente.login = usuario.login;
             usuarioCorrente.email = usuario.email;
             usuarioCorrente.nome = usuario.nome;
+            usuarioCorrente.adm = usuario.adm;
 
             // Salva os dados do usuário corrente no Session Storage, mas antes converte para string
             sessionStorage.setItem ('usuarioCorrente', JSON.stringify (usuarioCorrente));
@@ -98,13 +101,13 @@ function loginUser (login, senha) {
 // Apaga os dados do usuário corrente no sessionStorage
 function logoutUser () {
     sessionStorage.removeItem ('usuarioCorrente');
-    window.location = LOGIN_URL;
+    window.location = "/index.html";
 }
 
 function addUser (nome, login, senha, email) {
 
     // Cria um objeto de usuario para o novo usuario 
-    let usuario = { "login": login, "senha": senha, "nome": nome, "email": email};
+    let usuario = { "login": login, "senha": senha, "nome": nome, "email": email, "adm": false};
 
     // Envia dados do novo usuário para ser inserido no JSON Server
     fetch(API_URL, {

@@ -5,12 +5,14 @@
       "senha": "123",
       "nome": "andre lages",
       "email": "andre@silk.com",
+      "adm": false,
       "id": 1
     },
     {
       "login": "adm",
       "senha": "123",
       "nome": "administrador",
+      "adm": true,
       "email": "adm@silk.com",
       "id": 2
     }
@@ -39,6 +41,13 @@
       "descricao": "Novo jogo da ubisoft",
       "imagem_principal": "https://media.rawg.io/media/games/526/526881e0f5f8c1550e51df3801f96ea3.jpg",
       "id_externo": "981791"
+    }
+  ],
+  "favoritos": [
+    {
+      "id": 1,
+      "usuarioId": 1,
+      "gameId": 3498
     }
   ]
 }

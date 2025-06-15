@@ -15,43 +15,50 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <script>
         function initPage() {
-            if(usuarioCorrente.nome == "adm"){
-                
+            user = usuarioCorrente;
+            if(usuarioCorrente.adm == true){
+                $(".navegacao").html(`
+                    <a href="favoritos.html">Favoritos</a>
+                    <a href="cadastro.html">Cadastro</a>
+                    <button id="logout" class="btn btn-danger">Logout</button>
+                `)
             }
-            else if(usuarioCorrente.nome != ""){
-
+            else if(user.nome != undefined){
+                $(".navegacao").html(`
+                    <a href="login.html">Favoritos</a>
+                    <button id="logout" class="btn btn-danger">Logout</button>
+                `)
             }
             else{
-
+                $(".navegacao").html(`
+                    <a href="login.html">Login</a>
+                `)
             }
 
-            // Associa a função de logout ao botão
-            document.getElementById('btn_logout').addEventListener('click', logoutUser);
-
             // Informa o nome do usuário logado
-            document.getElementById('nomeUsuario').innerHTML = usuarioCorrente.nome;
+            //document.getElementById('nomeUsuario').innerHTML = usuarioCorrente.nome;
 
             // Carrega usuários e executa a função de exibição
-            carregarUsuarios (exibeUsuarios);
+            //carregarUsuarios (exibeUsuarios);
         }
 
         // Associa ao evento de carga da página a função para verificar se o usuário está logado
-        window.addEventListener('load', initPage);
+        $(document).ready(function(){
+            initPage();
+            $(".navegacao").on('click', '#logout', logoutUser);
+        });
     </script>
 </head>
 <body class="example">
     <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
-        <div class="bg-dark p-4 d-flex justify-content-around">
-            <a href="login.html">Login</a>
+        <div class="navegacao bg-dark p-4 d-flex justify-content-around">
+
         </div>
     </div>
     <header class="d-flex justify-content-between align-items-center pt-4 px-sm-5 px-3">
         <h1><a href="index.html">Silk</a></h1>
-        <nav id="navegacao" class="d-flex justify-content-between align-items-center d-none d-sm-flex">
-            <div id="navegacao">
+        <nav class="navegacao d-flex justify-content-between align-items-center d-none d-sm-flex">
 
-            </div>
-            <a class="p-2" href="login.html">Login</a>
         </nav>
         <button class="navbar-toggler m-3 d-sm-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="fa-solid fa-bars"></span>
@@ -119,5 +126,6 @@
         </section>
     </footer>
     <script src="./assets/scripts/app.js"></script>
+    <script src="./assets/scripts/login.js"></script>
 </body>
 </html>

@@ -106,6 +106,12 @@ select {
     width: 500px;
 }
 
+.fa-heart{
+    font-size: 20px;
+    text-align: end;
+    cursor: pointer;
+}
+
 /* Seletores dos componentes do Rodapé */
 
 footer {
