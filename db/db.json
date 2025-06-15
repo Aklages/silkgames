@@ -1,9 +1,18 @@
 {
   "usuarios": [
     {
-      "id": 1,
-      "nome": "Andre",
-      "email": "andre@silk.com"
+      "login": "andre",
+      "senha": "123",
+      "nome": "andre lages",
+      "email": "andre@silk.com",
+      "id": 1
+    },
+    {
+      "login": "adm",
+      "senha": "123",
+      "nome": "administrador",
+      "email": "adm@silk.com",
+      "id": 2
     }
   ],
   "destaques": [
