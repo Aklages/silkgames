@@ -61,6 +61,14 @@ main {
     text-align: left;
 }
 
+form > div > div > input {
+    color: black;
+}
+
+select {
+    color: black;
+}
+
 .corte{
     height: 60vh;
     object-fit: cover;

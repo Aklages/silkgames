@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silk</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/silk.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/4f6d2b1093.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body id="corpo" class="bg-secondary">
+    <header class="d-flex justify-content-between align-items-center pt-4 px-sm-5 px-3">
+        <h1><a href="index.html">Silk</a></h1>
+        <h1>ADM-Cadastro</h1>
+    </header>
+    <main class="p-5 px-sm-5 px-3">
+        <form action="submit">
+            <div class="d-flex justify-content-between flex-wrap">
+                <div class="m-3">
+                    <label for="formId">ID:</label>
+                    <input id="formId" name="formId" type="text">
+                </div>
+                <div class="m-3">
+                    <label for="formDestaque">Destaque:</label>
+                    <select id="formDestaque" name="formDestaque">
+                    <option value="true">true</option>
+                    <option value="false">false</option>
+                    </select> 
+                </div>
+                <div class="m-3">
+                    <label for="formTitulo">Titulo:</label>
+                    <input id="formTitulo" name="formTitulo" type="text">
+                </div>
+                <div class="m-3">
+                    <label for="formDescricao">Descricao:</label>
+                    <input id="formDescricao" name="formDescricao" type="text">
+                </div>
+                <div class="m-3">
+                    <label for="formConteudo">Conteudo:</label>
+                    <input id="formConteudo" name="formConteudo" type="text">
+                </div>
+                <div class="m-3">
+                    <label for="formPlataformas">Plataformas:</label>
+                    <input id="formPlataformas" name="formPlataformas" type="text">
+                </div>
+                <div class="m-3">
+                    <label for="formGenero">Genero:</label>
+                    <input id="formGenero" name="formGenero" type="text">
+                </div>
+                <div class="m-3">
+                    <label for="formLancamento">Lancamento:</label>
+                    <input id="formLancamento" name="formLancamento" type="text">
+                </div> 
+                <div class="m-3">
+                    <label for="formDesenvolvedora">Desenvolvedora:</label>
+                    <input id="formDesenvolvedora" name="formDesenvolvedora" type="text">
+                </div>
+                <div class="m-3">
+                    <label for="formEditora">Editora:</label>
+                    <input id="formEditora" name="formEditora" type="text">
+                </div>
+                <div class="m-3">
+                    <label for="formImagem_principal">Imagem_principal:</label>
+                    <input id="formImagem_principal" name="formImagem_principal" type="file" disabled>
+                </div>
+                <div class="m-3">
+                    <label for="formImagens_complementares">Imagens_complementares:</label>
+                    <input id="formImagens_complementares" name="formImagens_complementares" type="file" multiple disabled>
+                </div>
+            </div>
+            <div class="m-3">
+                <button id="Create" type="button" class="btn btn-dark">Create</button>
+                <button id="Update" type="button" class="btn btn-dark">Update</button>
+                <button id="Delete" type="button" class="btn btn-dark">Delete</button>
+                <button id="Clear" type="button" class="btn btn-dark">Clear</button>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-sm-12">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Destaque</th>
+                            <th scope="col">Titulo</th>
+                            <th scope="col">Descricao</th>
+                            <th scope="col">Conteudo</th>
+                            <th scope="col">Plataformas</th>
+                            <th scope="col">Genero</th>
+                            <th scope="col">Lancamento</th>
+                            <th scope="col">Desenvolvedora</th>
+                            <th scope="col">Editora</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+<script src="./assets/scripts/crud.js"></script>
+</body>
+</html>
