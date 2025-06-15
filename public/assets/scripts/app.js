@@ -41,16 +41,16 @@ if(games_carousel){
 
 function checar(game_id) {
     let user_id = JSON.parse(sessionStorage.getItem('usuarioCorrente')).id;
-    return fetch(`favoritos?usuarioId=${user_id}&gameId=${game_id}`)
-        .then(res => res.json()) 
-        .then(data => {
-            if (data.length > 0) {
-                return `fa-solid`;
-            } 
-            else{
-                return `fa-regular`;
-            }
-        });
+    return  fetch(`favoritos?usuarioId=${user_id}&gameId=${game_id}`)
+            .then(res => res.json()) 
+            .then(data => {
+                if (data.length > 0) {
+                    return `fa-solid`;
+                } 
+                else{
+                    return `fa-regular`;
+                }
+            });
 }
 
 

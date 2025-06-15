@@ -45,9 +45,44 @@
   ],
   "favoritos": [
     {
-      "id": 1,
+      "usuarioId": 2,
+      "gameId": 4062,
+      "id": 1
+    },
+    {
+      "usuarioId": 2,
+      "gameId": 12020,
+      "id": 2
+    },
+    {
+      "usuarioId": 2,
+      "gameId": 4291,
+      "id": 3
+    },
+    {
+      "usuarioId": 2,
+      "gameId": 5679,
+      "id": 4
+    },
+    {
       "usuarioId": 1,
-      "gameId": 3498
+      "gameId": 5286,
+      "id": 9
+    },
+    {
+      "usuarioId": 1,
+      "gameId": 5679,
+      "id": 10
+    },
+    {
+      "usuarioId": 1,
+      "gameId": 4291,
+      "id": 12
+    },
+    {
+      "usuarioId": 1,
+      "gameId": 3328,
+      "id": 13
     }
   ]
 }
