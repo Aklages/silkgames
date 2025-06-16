@@ -1,43 +1,42 @@
 const key = "670a9003706a4ef584c943665c087a24";
 
-const games_carousel = $("#games_carousel");
+const destaques_carousel = $("#destaques_carousel");
 const games_section = $("#games_section");
 const games_pages = $("#games_pages");
 
-if(games_carousel){
-    fetch(`destaques?ativo=true`)
-    .then(res => res.json())
-    .then(games => {
-        games.forEach(game => {
-            if(game.id == 1){
-                games_carousel.append(`
-                <div id="${game.id_externo}" class="carousel-item active link">
-                <img src="${game.imagem_principal}" class="d-block w-100 corte rounded banner" alt="...">
-                <div class="carousel-caption d-block">
-                <h5>${game.titulo}</h5>
-                <p>${game.descricao}</p>
-                </div>
-            </div>
-            `)
+if (destaques_carousel) {
+    fetch("destaques?ativo=true")
+    .then(res => res.json()) 
+    .then(destaques => {
+        destaques.forEach((destaque, index) => {
+            let activeClass;
+
+            if(index == 0){
+                activeClass = "active"
             }
             else{
-                games_carousel.append(`
-                <div id="${game.id_externo}" class="carousel-item link">
-                <img src="${game.imagem_principal}" class="d-block w-100 corte rounded banner" alt="...">
-                <div class="carousel-caption d-block">
-                <h5>${game.titulo}</h5>
-                <p>${game.descricao}</p>
-                </div>
-            </div>
-            `);
+                activeClass = ""
             }
-            let index = game.id_externo;
-            $(`#${index}`).on("click", ()=>{
-                window.location.href = `detalhe.html?id=${index}`;
-            })
+
+            destaques_carousel.append(`
+                <div id="${destaque.id}" class="carousel-item ${activeClass} link">
+                    <img src="${destaque.imagem}" class="d-block w-100 corte rounded banner" alt="...">
+                    <div class="carousel-caption d-block bg-black">
+                        <h5>${destaque.titulo}</h5>
+                        <p>${destaque.descricao}</p>
+                    </div>
+                </div>
+            `);
+
+            let url = destaque.informacao_externa;
+            let id = destaque.id;
+            $(`#${id}`).on("click", () => {
+                window.open(url, '_blank'); 
+            });
         });
     })
 }
+
 
 function checar(game_id) {
     let user_id = JSON.parse(sessionStorage.getItem('usuarioCorrente')).id;

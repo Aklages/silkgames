@@ -19,7 +19,7 @@
             if(usuarioCorrente.adm == true){
                 $(".navegacao").html(`
                     <a href="favoritos.html">Favoritos</a>
-                    <a href="cadastro.html">Cadastro</a>
+                    <a href="cadastro_destaque.html">Cadastro</a>
                     <button id="logout" class="btn btn-danger">Logout</button>
                 `)
             }
@@ -65,7 +65,7 @@
         </button>
     </header>
     <main class="p-5 px-sm-5 px-3">
-        <h1>Itens em Destaque</h1>
+        <h1>Destaque</h1>
         <hr>
         <div id="carouselExampleCaptions" class="carousel slide py-3">
             <div class="carousel-indicators">
@@ -73,7 +73,7 @@
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div id="games_carousel" class="carousel-inner">
+            <div id="destaques_carousel" class="carousel-inner">
 
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">

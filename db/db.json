@@ -20,27 +20,35 @@
   "destaques": [
     {
       "id": 1,
-      "ativo": true,
-      "titulo": "Hollow Knight: Silksong",
-      "descricao": "Um jogo Indie de ação e aventura",
-      "imagem_principal": "https://media.rawg.io/media/games/27c/27cd8b7dead05a870f8a514a9a1915ad.jpg",
-      "id_externo": "292844"
+      "ativo": "true",
+      "titulo": "Pixel - Festival de Games e Arte Digital",
+      "descricao": "Evento de games em BH",
+      "imagem": "https://images.sympla.com.br/67f9b59d9e4ae.png",
+      "informacao_externa": "https://www.instagram.com/pixel.nerdverso/"
     },
     {
       "id": 2,
-      "ativo": true,
-      "titulo": "Death Stranding 2: On The Beach",
-      "descricao": "O segundo jogo da Kojima productions",
-      "imagem_principal": "https://media.rawg.io/media/games/b85/b85bc300d42588af66fb516b7563f74f.jpg",
-      "id_externo": "891532"
+      "ativo": "true",
+      "titulo": "Steam Summer Sale",
+      "descricao": "Promoção de diversos jogos da steam",
+      "imagem": "https://i.ytimg.com/vi/Na37dINcV2I/maxresdefault.jpg",
+      "informacao_externa": "https://store.steampowered.com/news/group/4145017/view/4264427597939246983"
     },
     {
       "id": 3,
-      "ativo": true,
-      "titulo": "Assassin's Creed Shadows",
-      "descricao": "Novo jogo da ubisoft",
-      "imagem_principal": "https://media.rawg.io/media/games/526/526881e0f5f8c1550e51df3801f96ea3.jpg",
-      "id_externo": "981791"
+      "ativo": "false",
+      "titulo": "Data de Lançamento de Silksong",
+      "descricao": "Data de silksong deve ser anunciada nesse evento da xbox",
+      "imagem": "https://eloutput.com/wp-content/uploads/2025/06/fecha-de-salida-Hollow-Knight-Silksong-0.webp",
+      "informacao_externa": "https://hollowknightsilksong.com/"
+    },
+    {
+      "id": 4,
+      "ativo": "true",
+      "titulo": "Lançamento de METAL GEAR SOLID Δ: SNAKE EATER",
+      "descricao": "Lançamento do remake de metal gear solid 3 em  28 de agosto de 2025",
+      "imagem": "https://levelupnews.com.br/wp-content/uploads/2025/02/IMG_20250206_100338.jpg",
+      "informacao_externa": "https://store.steampowered.com/app/2417610/METAL_GEAR_SOLID_D_SNAKE_EATER/"
     }
   ],
   "favoritos": [

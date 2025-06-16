@@ -17,18 +17,18 @@
 <body id="corpo" class="bg-secondary">
     <header class="d-flex justify-content-between align-items-center pt-4 px-sm-5 px-3">
         <h1><a href="index.html">Silk</a></h1>
-        <h1>ADM-Cadastro</h1>
+        <h1>Cadastro Destaques ADM</h1>
     </header>
     <main class="p-5 px-sm-5 px-3">
         <form action="submit">
             <div class="d-flex justify-content-between flex-wrap">
                 <div class="m-3">
                     <label for="formId">ID:</label>
-                    <input id="formId" name="formId" type="text">
+                    <input id="formId" name="formId" type="text" disabled>
                 </div>
                 <div class="m-3">
-                    <label for="formDestaque">Destaque:</label>
-                    <select id="formDestaque" name="formDestaque">
+                    <label for="formAtivo">Ativo:</label>
+                    <select id="formAtivo" name="formAtivo">
                     <option value="true">true</option>
                     <option value="false">false</option>
                     </select> 
@@ -42,36 +42,12 @@
                     <input id="formDescricao" name="formDescricao" type="text">
                 </div>
                 <div class="m-3">
-                    <label for="formConteudo">Conteudo:</label>
-                    <input id="formConteudo" name="formConteudo" type="text">
+                    <label for="formImagem">Imagem:</label>
+                    <input id="formImagem" name="formImagem" type="text">
                 </div>
                 <div class="m-3">
-                    <label for="formPlataformas">Plataformas:</label>
-                    <input id="formPlataformas" name="formPlataformas" type="text">
-                </div>
-                <div class="m-3">
-                    <label for="formGenero">Genero:</label>
-                    <input id="formGenero" name="formGenero" type="text">
-                </div>
-                <div class="m-3">
-                    <label for="formLancamento">Lancamento:</label>
-                    <input id="formLancamento" name="formLancamento" type="text">
-                </div> 
-                <div class="m-3">
-                    <label for="formDesenvolvedora">Desenvolvedora:</label>
-                    <input id="formDesenvolvedora" name="formDesenvolvedora" type="text">
-                </div>
-                <div class="m-3">
-                    <label for="formEditora">Editora:</label>
-                    <input id="formEditora" name="formEditora" type="text">
-                </div>
-                <div class="m-3">
-                    <label for="formImagem_principal">Imagem_principal:</label>
-                    <input id="formImagem_principal" name="formImagem_principal" type="file" disabled>
-                </div>
-                <div class="m-3">
-                    <label for="formImagens_complementares">Imagens_complementares:</label>
-                    <input id="formImagens_complementares" name="formImagens_complementares" type="file" multiple disabled>
+                    <label for="formInformacao_externa">Informacao_externa:</label>
+                    <input id="formInformacao_externa" name="formInformacao_externa" type="text">
                 </div>
             </div>
             <div class="m-3">
@@ -87,24 +63,15 @@
                     <thead>
                         <tr>
                             <th scope="col">#</th>
-                            <th scope="col">Destaque</th>
+                            <th scope="col">Ativo</th>
                             <th scope="col">Titulo</th>
                             <th scope="col">Descricao</th>
-                            <th scope="col">Conteudo</th>
-                            <th scope="col">Plataformas</th>
-                            <th scope="col">Genero</th>
-                            <th scope="col">Lancamento</th>
-                            <th scope="col">Desenvolvedora</th>
-                            <th scope="col">Editora</th>
+                            <th scope="col">Imagem</th>
+                            <th scope="col">Informacao_externa</th>
                         </tr>
                     </thead>
                     <tbody id="tabela">
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -117,5 +84,6 @@
         </div>
     </main>
 <script src="./assets/scripts/crud.js"></script>
+<script src="./assets/scripts/login.js"></script>
 </body>
 </html>
