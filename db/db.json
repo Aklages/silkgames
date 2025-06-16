@@ -64,11 +64,6 @@
     },
     {
       "usuarioId": 2,
-      "gameId": 4291,
-      "id": 3
-    },
-    {
-      "usuarioId": 2,
       "gameId": 5679,
       "id": 4
     },
@@ -91,6 +86,11 @@
       "usuarioId": 1,
       "gameId": 3328,
       "id": 13
+    },
+    {
+      "usuarioId": 2,
+      "gameId": 9767,
+      "id": 14
     }
   ]
 }

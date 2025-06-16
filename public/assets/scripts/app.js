@@ -37,7 +37,6 @@ if (destaques_carousel) {
     })
 }
 
-
 function checar(game_id) {
     let user_id = JSON.parse(sessionStorage.getItem('usuarioCorrente')).id;
     return  fetch(`favoritos?usuarioId=${user_id}&gameId=${game_id}`)
@@ -51,7 +50,6 @@ function checar(game_id) {
                 }
             });
 }
-
 
 function pages(page){
     games_section.html("Carregando...");
@@ -156,83 +154,66 @@ $(`#searchbutton`).on("click", ()=>{
             fetch(`https://api.rawg.io/api/games/${game.id}?key=${key}`)
             .then(res => res.json())
             .then(game_info => {
+                checar(game.id)
+                .then(element => {
                 descricao = game_info.description.substr(0, 60);
                 games_section.append(`
                 <div class="col d-flex flex-column align-items-center">
-                    <div id="${game.id}" class="card my-3 p-3 link">
-                        <img src="${game.background_image}" class="card-img-top img-fluid corte" alt="...">
-                        <div class="card-body">
-                            <h3>${game.name}</h3>
-                            <p class="card-text"><light>${descricao}.</light></p>                    
+                    <div class="card my-3 p-3">
+                        <i id="${game.id}" class="favoritar ${element} fa-heart mb-2"></i>
+                        <div id="${game.id}" class="link">
+                            <img src="${game.background_image}" class="card-img-top img-fluid corte" alt="...">
+                            <div class="card-body">
+                                <h3>${game.name}</h3>
+                                <p class="card-text"><light>${descricao}.</light></p>                    
+                            </div>
                         </div>
                     </div>
                 </div>
                 `);
+                })
+                .then(()=>{
+                let index = game.id;
+                $(`#${index}.favoritar`).on("click", ()=>{
+                    let icon = $(`#${index}.favoritar`);
+                    let user_id = JSON.parse(sessionStorage.getItem('usuarioCorrente')).id;
+                    if (icon.hasClass("fa-regular")){
+                        icon.removeClass("fa-regular").addClass("fa-solid");
+                        fetch("favoritos", {
+                            method: "POST",
+                            headers: { "Content-Type": "application/json" },
+                            body: JSON.stringify({ 
+                                usuarioId: user_id,
+                                gameId: index 
+                            })
+                        })
+                    }
+                    else{
+                        icon.removeClass("fa-solid").addClass("fa-regular");
+                        fetch(`favoritos?gameId=${index}&usuarioId=${user_id}`)
+                        .then(res => res.json())
+                        .then(data => {
+                            console.log(data[0])
+                            fetch(`favoritos/${data[0].id}`, {
+                                method: "DELETE"
+                            })
+                        })
+                    }
+                })
+                $(`#${index}.link`).on("click", ()=>{
+                    window.location.href = `detalhe.html?id=${index}`;
+                })
             })
-            let index = game.id;
-            $(`#${index}`).on("click", ()=>{
-                window.location.href = `detalhe.html?id=${index}`;
             })
         })
-        click(1, 5)
+        click(1, 2)
     })
 })
 
 $(`#searchbar`).on("blur", ()=>{
     value = $("#searchbar").val();
     if(value == ""){
+        click(1, 5)
         pages(1);
     }
 })
-
-const game_main = $("#game_main");
-const game_itens = $("#game_itens");
-
-let params = new URLSearchParams(document.location.search);
-let id = params.get("id");
-
-if(game_main && game_itens){
-    fetch(`https://api.rawg.io/api/games/${id}?key=${key}`)
-    .then(res => res.json())
-    .then(game =>{
-        game_main.html(`
-                <div class="primeiro d-flex flex-column align-items-lg-start align-items-center">
-                    <h2>${game.name}</h2>
-                    <img class="img-fluid corte" src="${game.background_image}" alt="">
-                </div>
-                <div class="d-flex flex-column justify-content-between segundo">
-                    <div class="my-1">
-                        <h3 class="mt-3">Sobre</h3>
-                        <p class="d-inline">${game.description}</p>
-                    </div>
-                    <div class="my-1">
-                        <h3 class="mt-3">Plataformas</h3><p class="d-inline">${game.platforms[0].name}</p>
-                    </div>
-                    <div class="my-1">
-                        <h3 class="mt-3">Gêneros</h3><p class="d-inline">${game.genres[0].name}</p>
-                    </div>
-                    <div class="my-1">
-                        <h3 class="mt-3">Lançamento</h3><p class="d-inline">${game.released}</p>
-                    </div>
-                    <div class="my-1">
-                        <h3 class="mt-3">Desenvolvedora</h3><p class="d-inline">${game.developers[0].name}</p>
-                    </div>
-                    <div class="my-1">
-                        <h3 class="mt-3">Editora</h3><p class="d-inline">${game.publishers[0].name}</p>
-                    </div>
-                </div>
-            `);
-            fetch(`https://api.rawg.io/api/games?key=${key}&search=${game.slug}&search_exact=true`)
-            .then(res => res.json())
-            .then(game_info => {
-                let screenshots = game_info.results[0].short_screenshots;
-                for(let i = 1; i < screenshots.length; i++){
-                    game_itens.append(`
-                    <div class="col">
-                        <h3>Game Screenshot ${i}</h3><img class="imgs" src="${screenshots[i].image}" alt="">
-                    </div>
-                    `)
-                }
-            })
-    })
-}
