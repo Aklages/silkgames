@@ -34,7 +34,7 @@ function initLoginApp () {
         if (usuarioCorrenteJSON) {
             usuarioCorrente = JSON.parse (usuarioCorrenteJSON);
         } else {
-            if(window.location.pathname != "/index.html"){
+            if(window.location.pathname != "/index.html" && window.location.pathname != "/detalhe.html"){
                 window.location.href = LOGIN_URL;
             }
         }

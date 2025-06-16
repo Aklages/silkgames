@@ -4,6 +4,7 @@ const destaques_carousel = $("#destaques_carousel");
 const games_section = $("#games_section");
 const games_pages = $("#games_pages");
 
+
 if (destaques_carousel) {
     fetch("destaques?ativo=true")
     .then(res => res.json()) 
@@ -38,18 +39,24 @@ if (destaques_carousel) {
 }
 
 function checar(game_id) {
-    let user_id = JSON.parse(sessionStorage.getItem('usuarioCorrente')).id;
-    return  fetch(`favoritos?usuarioId=${user_id}&gameId=${game_id}`)
-            .then(res => res.json()) 
-            .then(data => {
-                if (data.length > 0) {
-                    return `fa-solid`;
-                } 
-                else{
-                    return `fa-regular`;
-                }
-            });
+    let usuario = JSON.parse(sessionStorage.getItem('usuarioCorrente'));
+
+    if (!usuario) {
+        return Promise.resolve('fa-regular'); 
+    }
+    
+    let user_id = usuario.id;
+    return fetch(`favoritos?usuarioId=${user_id}&gameId=${game_id}`)
+        .then(res => res.json()) 
+        .then(data => {
+            if (data.length > 0) {
+                return 'fa-solid';
+            } else {
+                return 'fa-regular';
+            }
+        })
 }
+
 
 function pages(page){
     games_section.html("Carregando...");
@@ -84,6 +91,7 @@ function pages(page){
                 $(`#${index}.favoritar`).on("click", ()=>{
                     let icon = $(`#${index}.favoritar`);
                     let user_id = JSON.parse(sessionStorage.getItem('usuarioCorrente')).id;
+                    console.log(user_id);
                     if (icon.hasClass("fa-regular")){
                         icon.removeClass("fa-regular").addClass("fa-solid");
                         fetch("favoritos", {

@@ -7,17 +7,22 @@ let params = new URLSearchParams(document.location.search);
 let id = params.get("id");
 
 function checar(game_id) {
-    let user_id = JSON.parse(sessionStorage.getItem('usuarioCorrente')).id;
-    return  fetch(`favoritos?usuarioId=${user_id}&gameId=${game_id}`)
-            .then(res => res.json()) 
-            .then(data => {
-                if (data.length > 0) {
-                    return `fa-solid`;
-                } 
-                else{
-                    return `fa-regular`;
-                }
-            });
+    let usuario = JSON.parse(sessionStorage.getItem('usuarioCorrente'));
+
+    if (!usuario) {
+        return Promise.resolve('fa-regular'); 
+    }
+    
+    let user_id = usuario.id;
+    return fetch(`favoritos?usuarioId=${user_id}&gameId=${game_id}`)
+        .then(res => res.json()) 
+        .then(data => {
+            if (data.length > 0) {
+                return 'fa-solid';
+            } else {
+                return 'fa-regular';
+            }
+        })
 }
 
 if(game_main && game_itens){
@@ -40,7 +45,7 @@ if(game_main && game_itens){
                         <p class="d-inline">${game.description}</p>
                     </div>
                     <div class="my-1">
-                        <h3 class="mt-3">Plataformas</h3><p class="d-inline">${game.platforms[0].name}</p>
+                        <h3 class="mt-3">Plataformas</h3><p class="d-inline">${game.platforms[0].platform.name}</p>
                     </div>
                     <div class="my-1">
                         <h3 class="mt-3">Gêneros</h3><p class="d-inline">${game.genres[0].name}</p>

@@ -15,6 +15,14 @@
       "adm": true,
       "email": "adm@silk.com",
       "id": 2
+    },
+    {
+      "login": "bruno",
+      "senha": "123",
+      "nome": "brunoBu",
+      "email": "bruno@br.com",
+      "adm": false,
+      "id": 3
     }
   ],
   "destaques": [

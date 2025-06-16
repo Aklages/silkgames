@@ -112,6 +112,16 @@ select {
     cursor: pointer;
 }
 
+.dark-red {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.dark-red:hover {
+    background-color: #bd2130;
+    border-color: #b21f2d;
+}
+
 /* Seletores dos componentes do Rodapé */
 
 footer {

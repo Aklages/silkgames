@@ -1,3 +1,9 @@
+const usuario = JSON.parse(sessionStorage.getItem('usuarioCorrente'));
+
+if(usuario.adm == false){
+    window.location.href = "index.html";
+}
+
 function list(){
     let table = $("#tabela");
     table.html("");
